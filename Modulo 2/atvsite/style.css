@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    background-color: blue;
+
+}
+
+div#menu {
+    background-color: aqua;
+}
+
+div#menu > ul {
+    display: none;
+}
+
+div#menu:hover > ul {
+    color: #0015ff;
+    display: block;
+}
