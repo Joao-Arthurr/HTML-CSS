@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursiva, sans-serif;
+    --fonte3: 'Sriracha', cursiva;
+}
+
 *{
     margin: 0px;
 }
@@ -7,6 +17,7 @@
 html body {
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--fonte1);
 }
 
 p {
@@ -15,7 +26,6 @@ p {
 }
 
 header {
-    height: 150px;
     color: white;
     background-color: black;
     text-align: center;
@@ -24,6 +34,8 @@ header {
 header > h1 {
     padding-top: 40px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 7vw;
 }
 
 header > p {
@@ -40,27 +52,17 @@ a:hover {
     text-decoration: underline;
 }
 
-section#joaninha {
-    height: 600px;
-    padding: 20px;
-    background: black url(imagens/background001.jpg) center center no-repeat;
-    background-size: cover;
-
-}
-
-section#livro {
-    height: 600px;
-    padding: 20px;
-    background: black url(imagens/background002.jpg) center center no-repeat;
-    background-size: cover;
-
-}
-
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 1.5vw;
+}
+
+section > p {
+    font-family: var(--fonte3);
 }
 
 section.normal {
@@ -74,9 +76,9 @@ section.imagem {
 }
 
 section.imagem > p {
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.251);
-    width: 400px;
-    
 }
 
 footer {
@@ -88,5 +90,5 @@ footer {
 }
 
 footer p {
-    font-size: medium;
+    font-size: 1vw;
 }
