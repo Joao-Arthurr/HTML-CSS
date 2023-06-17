@@ -4,8 +4,9 @@
     margin: 0px;
 }
 
-body{
-    
+html body {
+    min-height: 100vh;
+    background-color: darkgrey;
 }
 
 p {
@@ -18,12 +19,25 @@ header {
     color: white;
     background-color: black;
     text-align: center;
-    font-size: larger;
-    
 }
 
-header h1 {
+header > h1 {
     padding-top: 40px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 section#joaninha {
@@ -42,26 +56,30 @@ section#livro {
 
 }
 
-article.normal {
-    padding: 20px;
-    min-height: 300px;
-    width: 300px;
-    color: black;
-    line-height: 50px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
-article.especial {
-    position: absolute;
-    padding: 20px;
-    min-height: 300px;
-    width: 300px;
+section.normal {
+    color: black;
+    background-color: white;
+}
+
+section.imagem {
     color: white;
-    line-height: 50px;
-    background-color: rgba(0, 0, 0, 0.899);
+    background-color: rgb(47, 47, 47);
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.251);
+    width: 400px;
+    
 }
 
 footer {
-    height: 20px;
     background-color: black;
     color: white;
     text-align: center;
