@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: cadetblue;
+}
+
+header {
+    background-color: lightgray;
+    text-align: center;
+} 
+
+nav {
+    background-color: lightgray;
+}
+
+nav li {
+    display: inline-block;
+    background-color: gray;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: block;
+    margin: auto;
+    background-color: white;
+    max-width: 800px;
+    
+
+}
