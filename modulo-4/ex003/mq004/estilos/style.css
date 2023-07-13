@@ -3,38 +3,71 @@
 * {
     margin: 0px;
     padding: 0px;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: cadetblue;
+body, html {
+    background-color: lightgray;
 }
 
 header {
-    background-color: lightgray;
+    background-color: gray;
     text-align: center;
 } 
 
-nav {
-    background-color: lightgray;
+header > h1 {
+    padding: 10px;
 }
 
-nav li {
-    display: inline-block;
-    background-color: gray;
-
+span#menu {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: rgb(56, 56, 56);
 }
 
-nav a {
+span#menu:hover {
+    background-color: rgb(101, 100, 100);
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(97, 97, 97);
+    border-top: 1px solid black;
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+menu > ul > li > a:hover {
+    background-color: rgb(156, 156, 156);
 }
 
 main {
     display: block;
     margin: auto;
+    margin-top: 10px;
+    padding: 20px;
     background-color: white;
     max-width: 800px;
-    
+    border-radius: 10px;
+    text-align: justify;
+}
 
+article > h2 {
+    padding-bottom: 15px;
+}
+
+article > p {
+    text-indent: 15px;
+    line-height: 1.8em;
 }
